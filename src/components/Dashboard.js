@@ -10,13 +10,12 @@ const DashBoard = (props) => {
 
   const toggle = (tab) => {
     if (activeTab !== tab) {
-      setActiveTab({
-        activeTab: tab,
-      });
+      setActiveTab(tab);
     }
   };
 
   const { unansweredQuestions, answeredQuestions } = props;
+
   return (
     <div>
       <Nav tabs>

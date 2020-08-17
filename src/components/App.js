@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import { handleInitialData } from '../actions/shared';
 import Routes from './Routes';
-import NavBar from './NavBar';
+import Navigation from './Navigation';
 
 const App = (props) => {
   props.handleInitialData();
@@ -16,7 +16,7 @@ const App = (props) => {
     props.handleInitialData && (
       <Router>
         <div className="main-container">
-          <NavBar />
+          <Navigation />
           <Routes notLoggedIn={notLoggedIn} />
         </div>
       </Router>

@@ -21,14 +21,12 @@ const QuestionDetails = (props) => {
   const [selectedOption, setSelectedOption] = useState('');
 
   const radioSelected = (e) => {
-    this.setState({
-      selectedOption: e.target.value,
-    });
+    setSelectedOption(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSelectedOption(selectedOption);
+    props.saveQuestionAnswer(selectedOption);
   };
 
   const { question, questionAuthor, answer, total, percOne, percTwo } = props;

@@ -5,9 +5,10 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Question = (props) => {
-  const loadQuestionDetails = (questionId) => {
+  const loadQuestionDetails = (e, questionId) => {
+    console.log(questionId, 'questionId');
     let path = `/questions/` + questionId;
-    this.props.history.push(path);
+    props.history.push(path);
   };
 
   const { question, auth } = props;

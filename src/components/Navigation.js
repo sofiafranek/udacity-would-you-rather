@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import React, { useState } from 'react';
 import User from './User';
 
-const NavBar = (props) => {
+const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -54,7 +54,7 @@ const NavBar = (props) => {
   );
 };
 
-NavBar.propTypes = {
+Navigation.propTypes = {
   authedUser: PropTypes.string,
 };
 
@@ -64,4 +64,4 @@ const mapStateToProps = ({ authedUser }) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, null)(NavBar));
+export default withRouter(connect(mapStateToProps, null)(Navigation));
