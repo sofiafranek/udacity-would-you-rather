@@ -1,15 +1,15 @@
-export const RECEIVE_USERS = 'RECEIVE_USERS';
-export const ADD_USER_QUESTION = 'ADD_USER_QUESTION';
-export const USER_ANSWER_QUESTION = 'USER_ANSWER_QUESTION';
+const RECEIVE_USERS = 'RECEIVE_USERS';
+const ADD_USER_QUESTION = 'ADD_USER_QUESTION';
+const USER_ANSWER_QUESTION = 'USER_ANSWER_QUESTION';
 
-export const receiveUsers = (users) => {
+const receiveUsers = (users) => {
   return {
     type: RECEIVE_USERS,
     users,
   };
 };
 
-export const addUserQuestion = (authedUser, qid) => {
+const addUserQuestion = (authedUser, qid) => {
   return {
     type: ADD_USER_QUESTION,
     authedUser,
@@ -17,11 +17,20 @@ export const addUserQuestion = (authedUser, qid) => {
   };
 };
 
-export const saveUserAnswer = (auth, qid, option) => {
+const saveUserAnswer = (auth, qid, option) => {
   return {
     type: USER_ANSWER_QUESTION,
     auth,
     qid,
     option,
   };
+};
+
+export {
+  RECEIVE_USERS,
+  ADD_USER_QUESTION,
+  USER_ANSWER_QUESTION,
+  receiveUsers,
+  addUserQuestion,
+  saveUserAnswer,
 };
