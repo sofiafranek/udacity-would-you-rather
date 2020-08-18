@@ -1,4 +1,4 @@
-# "Would You Rather" app
+# Would You Rather
 
 ## Project:
 
