@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 const Question = (props) => {
   const loadQuestionDetails = (e, questionId) => {
-    console.log(questionId, 'questionId');
     let path = `/questions/` + questionId;
     props.history.push(path);
   };
