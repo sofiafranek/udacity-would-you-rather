@@ -41,11 +41,11 @@ let questions = {
     timestamp: 1467166872634,
     optionOne: {
       votes: ['sofiaf'],
-      text: 'have horrible short term memory',
+      text: 'Watch all the harry potter movies',
     },
     optionTwo: {
       votes: [],
-      text: 'have horrible long term memory',
+      text: 'watch all the lord of the rings',
     },
   },
   '6ni6ok3ym7mf1p33lnez': {
@@ -67,11 +67,11 @@ let questions = {
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
-      text: 'be telekinetic',
+      text: 'be strong',
     },
     optionTwo: {
       votes: ['sofiaf'],
-      text: 'be telepathic',
+      text: 'be fast',
     },
   },
   loxhs1bqm25b708cmbf3g: {
@@ -93,11 +93,11 @@ let questions = {
     timestamp: 1489579767190,
     optionOne: {
       votes: ['miguelm'],
-      text: 'find $50 yourself',
+      text: 'win the lottery yourself',
     },
     optionTwo: {
       votes: ['annaf'],
-      text: 'have your best friend find $500',
+      text: 'someone you love win the lottery',
     },
   },
   xj352vofupe1dqz9emx13r: {
@@ -106,11 +106,11 @@ let questions = {
     timestamp: 1493579767190,
     optionOne: {
       votes: ['annaf'],
-      text: 'write JavaScript',
+      text: 'code in react',
     },
     optionTwo: {
       votes: ['miguelm'],
-      text: 'write Swift',
+      text: 'code in nodeJS',
     },
   },
 };

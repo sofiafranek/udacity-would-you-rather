@@ -23,22 +23,18 @@ const NewQuestion = (props) => {
 
   const handleOptionOneChange = (event) => {
     event.preventDefault();
-    setOptionOne({
-      optionOne: event.target.value,
-    });
+    setOptionOne(event.target.value);
   };
 
   const handleOptionTwoChange = (event) => {
     event.preventDefault();
-    setOptionTwo({
-      optionTwo: event.target.value,
-    });
+    setOptionTwo(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     props.addQuestion(optionOne, optionTwo);
-    setRedirect({ redirect: true });
+    setRedirect(true);
   };
 
   if (redirect) {

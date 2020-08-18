@@ -24,6 +24,9 @@ const Navigation = (props) => {
         </NavbarBrand>
         {authedUser && (
           <>
+            <NavItem>
+              <User id={authedUser} />
+            </NavItem>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
@@ -36,9 +39,6 @@ const Navigation = (props) => {
                   <NavLink tag={Link} to="/leaderboard">
                     LeaderBoard
                   </NavLink>
-                </NavItem>
-                <NavItem>
-                  <User id={authedUser} />
                 </NavItem>
                 <NavItem>
                   <NavLink tag={Link} to="/logout">

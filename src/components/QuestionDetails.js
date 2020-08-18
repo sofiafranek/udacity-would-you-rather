@@ -13,6 +13,7 @@ import {
   Col,
 } from 'reactstrap';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import User from './User';
 import { handleAnswer } from '../actions/shared';
 import PropTypes from 'prop-types';
@@ -67,6 +68,7 @@ const QuestionDetails = (props) => {
                   >{`${percTwo}%`}</div>
                 </div>
                 <div className="total">Total number of votes: {total}</div>
+                <Link to="/">Back to questions</Link>
               </div>
             ) : (
               <Form onSubmit={handleSubmit}>
